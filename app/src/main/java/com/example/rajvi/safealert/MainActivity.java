@@ -21,7 +21,6 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.Locale;
 //=======
-=======
 
 import android.widget.Button;
 import android.widget.Toast;
@@ -52,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
 
         mButton = (Button) findViewById(R.id.buttonUncomf);
         mTxtSpeech = (TextView) findViewById(R.id.txtSpeech);
-        mTxtSpeech.setText("Hi");
+        //mTxtSpeech.setText("Hi");
 //        FloatingActionButton mbutton = (FloatingActionButton) findViewById(R.id.button);
         mButton.setOnClickListener(new View.OnClickListener() {
 
@@ -71,18 +70,9 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-//                Intent screen2 = new Intent(activity, Screen2V2Activity.class); //user has hit "I'm nervous"
-//                startActivity(screen2);
                 makeCallWrapper();
-=======
-
-                Intent screen2 = new Intent(MainActivity.this, Screen2V2Activity.class);
-                MainActivity.this.startActivity(screen2);
-
-//                Intent screen2 = new Intent(activity, Screen2V2Activity.class); //user has hit "I'm nervous"
-//                startActivity(screen2);
-
->>>>>>> origin/master
+//                Intent screen2 = new Intent(MainActivity.this, Screen2V2Activity.class);
+//                MainActivity.this.startActivity(screen2);
             }
 
         });
@@ -227,8 +217,6 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    
-    
  /*
     ActivityCompat.requestPermissions(this,
     new String[]{Manifest.permission.RECORD_AUDIO}, MIC_PERMISSION_REQUEST_CODE);
