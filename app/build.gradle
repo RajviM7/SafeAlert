@@ -27,4 +27,8 @@ dependencies {
     compile 'com.android.support:appcompat-v7:25.2.0'
     compile 'com.android.support:design:25.2.0'
     testCompile 'junit:junit:4.12'
+    
+     // The Client SDK resides on jCenter
+     //I'm 90% sure that the code goes here
+     compile 'com.twilio:client-android:1.2.18'
 }
