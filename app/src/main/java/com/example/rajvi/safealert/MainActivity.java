@@ -7,24 +7,27 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
-
+import android.widget.Button;
+import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         final MainActivity activity = this;
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
+        Button mButton = (Button) findViewById(R.id.button);
+//        FloatingActionButton mbutton = (FloatingActionButton) findViewById(R.id.button);
+        mButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
-                Intent screen2 = new Intent(activity, Screen2V2Activity.class);
-                startActivity(screen2);
+                Intent screen2 = new Intent(MainActivity.this, Screen2V2Activity.class);
+                MainActivity.this.startActivity(screen2);
             }
 
         });

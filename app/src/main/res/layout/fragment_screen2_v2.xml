@@ -14,19 +14,6 @@
         android:layout_height="wrap_content" />
 
     <TextView
-        android:text="- You are now sharing your location with your emergency contacts"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView4"
-        android:layout_toRightOf="@+id/section_label"
-        android:layout_toEndOf="@+id/section_label"
-        android:layout_marginLeft="17dp"
-        android:layout_marginStart="17dp"
-        android:layout_marginTop="26dp"
-        android:id="@+id/textView5"
-        android:textSize="25sp" />
-
-    <TextView
         android:text="Recently Activated:"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -45,7 +32,8 @@
         android:textSize="25sp"
         android:layout_below="@+id/textView5"
         android:layout_alignLeft="@+id/textView5"
-        android:layout_alignStart="@+id/textView5" />
+        android:layout_alignStart="@+id/textView5"
+        android:textAlignment="viewStart" />
 
     <Button
         android:text="Share my location with nearby Facebook friends"
@@ -55,5 +43,17 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="91dp"
         android:id="@+id/button5" />
+
+    <TextView
+        android:text="- You are now sharing your location with your emergency contacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:id="@+id/textView5"
+        android:textSize="25sp"
+        android:textAlignment="viewStart"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>
