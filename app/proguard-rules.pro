@@ -7,6 +7,12 @@
 # For more details, see
 #   http://developer.android.com/guide/developing/tools/proguard.html
 
+# Twilio Client
+-keep class com.twilio.** { *; }
+
+# Apache HttpClient
+-dontwarn org.apache.http.**
+
 # Add any project specific keep options here:
 
 # If your project uses WebView with JS, uncomment the following
@@ -14,4 +20,4 @@
 # class:
 #-keepclassmembers class fqcn.of.javascript.interface.for.webview {
 #   public *;
-#}
+#
