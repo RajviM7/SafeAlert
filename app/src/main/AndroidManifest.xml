@@ -28,8 +28,8 @@
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Screen2Activity"
-            android:label="@string/title_activity_screen2"
+            android:name=".Screen2V2Activity"
+            android:label="@string/title_activity_screen2_v2"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
