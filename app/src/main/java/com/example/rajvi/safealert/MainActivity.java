@@ -25,5 +25,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
+    
+    /*
+    ActivityCompat.requestPermissions(this,
+    new String[]{Manifest.permission.RECORD_AUDIO}, MIC_PERMISSION_REQUEST_CODE);
+    */
+    //add the above line of code when the user hits the "I'm nervous" button. It allows app to access mic in case of necesary 911 call
 }
