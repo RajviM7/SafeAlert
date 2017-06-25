@@ -24,11 +24,12 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
+
+    // The Client SDK resides on jCenter
+    //I'm 90% sure that the code goes here
     compile 'com.android.support:appcompat-v7:25.2.0'
     compile 'com.android.support:design:25.2.0'
+    compile 'com.twilio:client-android:1.2.18'
+    compile 'com.google.android.gms:play-services:10.2.0'
     testCompile 'junit:junit:4.12'
-    
-     // The Client SDK resides on jCenter
-     //I'm 90% sure that the code goes here
-     compile 'com.twilio:client-android:1.2.18'
 }
