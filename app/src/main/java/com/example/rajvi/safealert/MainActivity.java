@@ -7,17 +7,17 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
-<<<<<<< HEAD
+//<<<<<<< HEAD
 import android.widget.Button;
 import android.widget.Toast;
-=======
+//=======
 
 //UNCOMMENT WHEN WE'RE READY FOR TWILIO
 //import com.twilio.Twilio;
 //import com.twilio.rest.api.v2010.account.Call;
 
 
->>>>>>> origin/master
+//>>>>>>> origin/master
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -35,13 +35,13 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-<<<<<<< HEAD
+//<<<<<<< HEAD
                 Intent screen2 = new Intent(MainActivity.this, Screen2V2Activity.class);
                 MainActivity.this.startActivity(screen2);
-=======
-                Intent screen2 = new Intent(activity, Screen2V2Activity.class); //user has hit "I'm nervous"
-                startActivity(screen2);
->>>>>>> origin/master
+//=======
+//                Intent screen2 = new Intent(activity, Screen2V2Activity.class); //user has hit "I'm nervous"
+//                startActivity(screen2);
+//>>>>>>> origin/master
             }
 
         });
