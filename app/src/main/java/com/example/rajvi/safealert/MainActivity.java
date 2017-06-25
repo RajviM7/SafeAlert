@@ -35,7 +35,6 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    private TextView mTxtSpeech;
     private Button mButton;
     private Button mButtonHelp;
     private final int REQ_CODE_SPEECH_INPUT = 100;
@@ -50,8 +49,6 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         mButton = (Button) findViewById(R.id.buttonUncomf);
-        mTxtSpeech = (TextView) findViewById(R.id.txtSpeech);
-        //mTxtSpeech.setText("Hi");
 //        FloatingActionButton mbutton = (FloatingActionButton) findViewById(R.id.button);
         mButton.setOnClickListener(new View.OnClickListener() {
 
@@ -109,32 +106,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-        //Pop-up Alert
-//        Button mButton2 = (Button) findViewById(R.id.button2);
-//        mButton2.setOnClickListener(new View.OnClickListener() {
-//
-//            AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
-//            public class DialogFragment extends DialogFragment {
-//                @Override
-//                public Dialog onCreateDialog(Bundle savedInstanceState) {
-//                    // Use the Builder class for convenient dialog construction
-//                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-//                    builder.setPositiveButton(R.string.fire, new DialogInterface.OnClickListener() {
-//                        public void onClick(DialogInterface dialog, int id) {
-//                            toast.makeText(this,"enter a text here",Toast.LENTH_SHORT).show();
-//                        }
-//                    })
-//                            .setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
-//                                public void onClick(DialogInterface dialog, int id) {
-//                                    finish();
-//                                });
-//                                // Create the AlertDialog object and return it
-//                                return builder.create();
-//                            }
-//                }
-//            }
-//
-//        });
 
     private void makeCallWrapper() {
         int hasCallPermission = checkSelfPermission(android.Manifest.permission.CALL_PHONE);
@@ -210,36 +181,11 @@ public class MainActivity extends AppCompatActivity {
 
                     ArrayList<String> result = data
                             .getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
-                    mTxtSpeech.setText(result.get(0));
+                    //mTxtSpeech.setText(result.get(0));
                 }
                 break;
             }
         }
     }
 
- /*
-    ActivityCompat.requestPermissions(this,
-    new String[]{Manifest.permission.RECORD_AUDIO}, MIC_PERMISSION_REQUEST_CODE);
-    */
-    //add the above line of code when the user hits the "I'm feeling uncomfortable" button. It allows app to access mic in case of necesary 911 call
-
-    /*
-        public static boolean callPolice(){ //calls the police
-            public static final String ACCOUNT_SID = "ACebd0e977b0959d04da953c6fed0d5131";
-            public static final String AUTH_TOKEN = "c236a3a93ee47134154089aec6f875d0";
-            Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
-
-                          //  parameters( call to # aka my num to be replaced by 911, call from # aka twilio num, URI)
-                          // what is URI?
-             Call call = Call.creator(new PhoneNumber("+17327446890"), new PhoneNumber("+18482299702"), new URI(""http://demo.twilio.com/welcome/voice/").create();
-            //this will probably only say "welcome" right now!
-        }
-    */
-    
-    
-    /*
-    ActivityCompat.requestPermissions(this,
-    new String[]{Manifest.permission.RECORD_AUDIO}, MIC_PERMISSION_REQUEST_CODE);
-    */
-    //add the above line of code when the user hits the "I'm nervous" button. It allows app to access mic in case of necesary 911 call
-}
+ }

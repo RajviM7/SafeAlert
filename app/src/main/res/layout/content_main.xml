@@ -9,6 +9,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#E7F8F7"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.rajvi.safealert.MainActivity"
     tools:showIn="@layout/activity_main">
@@ -20,17 +21,23 @@
         android:id="@+id/button3"
         android:layout_centerHorizontal="true"
         android:layout_alignParentTop="true"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:background="#B9EBE8"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
 
     <Button
         android:text="Show Map"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/buttonMap"
         android:textSize="18sp"
         android:layout_marginBottom="39dp"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:background="#B9EBE8"/>
 
     <TextView
         android:text="Safe Alert"
@@ -48,31 +55,33 @@
         android:layout_alignStart="@+id/button3"
         android:layout_marginTop="79dp" />
 
+    <!--android:background="@android:color/white"/>-->
+<!---->
+
     <Button
         android:text="I'm Feeling Uncomfortable"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/buttonUncomf"
         android:onClick="onClick"
         android:textSize="18sp"
         android:layout_marginBottom="27dp"
         android:layout_above="@+id/buttonHelp"
-        android:layout_centerHorizontal="true" />
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:background="#B9EBE8"/>
 
     <Button
         android:text="Send Help Now!"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/buttonHelp"
         android:textSize="18sp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="32dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
         android:layout_above="@+id/buttonMap"
-        android:layout_centerHorizontal="true" />
-
-    <TextView
-        android:text="TextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/txtSpeech"
-        android:layout_weight="1" />
+        android:layout_centerHorizontal="true"
+        android:background="#B9EBE8"/>
 </RelativeLayout>
