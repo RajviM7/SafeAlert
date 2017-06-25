@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                Intent screen2 = new Intent(activity, Screen2V2Activity.class);
+                Intent screen2 = new Intent(activity, Screen2V2Activity.class); //user has hit "I'm nervous"
                 startActivity(screen2);
             }
 
